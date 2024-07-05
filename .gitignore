@@ -1,0 +1,26 @@
+# os specific
+.DS_Store
+desktop.ini
+
+# directories
+bin/
+obj/
+
+# intermediate
+*.d
+*.o
+
+# shared libraries
+*.so
+*.dll
+*.dylib
+
+# static libraries
+*.a
+*.lib
+
+# executables
+*.exe
+
+# compilation files
+compile_flags.txt
