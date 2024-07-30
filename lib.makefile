@@ -14,7 +14,7 @@ SOURCE_FILES    := $(shell find $(PROJECT) -name *.c)
 OBJECT_FILES    := $(SOURCE_FILES:%=$(OBJECT_FOLDER)/%.o)
 
 # ==== Flags ================================================================ #
-DEFINES         := -DCWEXPORT
+DEFINES         := -DCW_EXPORT
 COMPILER_FLAGS  := -Wall -Werror
 LINKER_FLAGS    := -shared -L$(BINARY_FOLDER) $(ADDL_LINK_FLAGS)
 INCLUDE_FLAGS   := -I$(INCLUDE_FOLDER) -I$(SOURCE_FOLDER) $(ADDL_INC_FLAGS)

@@ -13,7 +13,7 @@ SOURCE_FILES    := $(shell find $(PROJECT) -name *.c)
 OBJECT_FILES    := $(SOURCE_FILES:%=$(OBJECT_FOLDER)/%.o)
 
 # ==== Flags ================================================================ #
-DEFINES         := -DCWIMPORT
+DEFINES         := -DCW_IMPORT
 COMPILER_FLAGS  := -Wall -Werror
 LINKER_FLAGS    := -L$(BINARY_FOLDER) $(ADDL_LINK_FLAGS)
 INCLUDE_FLAGS   := -I$(SOURCE_FOLDER) $(ADDL_INC_FLAGS)

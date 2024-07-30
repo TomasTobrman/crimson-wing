@@ -1,10 +1,10 @@
 #ifndef _GARRULUS_DEFINES_H_
 #define _GARRULUS_DEFINES_H_
 
-#ifdef CWEXPORT
-#define GAPI __attribute__((visibility("default")))
+#ifdef CW_EXPORT
+#define G_API __attribute__((visibility("default")))
 #else
-#define GAPI
+#define G_API
 #endif
 
 #endif /* ifndef _GARRULUS_DEFINES_H_ */

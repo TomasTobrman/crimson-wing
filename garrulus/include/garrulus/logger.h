@@ -50,6 +50,6 @@ typedef enum log_level {
 #define G_TRACE(format, ...)
 #endif
 
-GAPI void log_output(log_level level, const char *format, ...);
+G_API void log_output(log_level level, const char *format, ...);
 
 #endif /* ifndef _GARRULUS_LOGGER_H_ */

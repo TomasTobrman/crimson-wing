@@ -24,7 +24,7 @@
 #endif
 #endif
 
-GAPI void print_assert_fail(const char* expression, const char* message, const char* file, const int line);
+G_API void print_assert_fail(const char* expression, const char* message, const char* file, const int line);
 
 #ifdef G_ENABLE_ASSERTS
 #define G_ASSERT(expr)          { if (expr) {} else { print_assert_fail(#expr, "" , __FILE__, __LINE__); g_debug_break(); } }
